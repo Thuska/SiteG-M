@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Wedding Times — Matheus & Graziela</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" />
+  <link rel="stylesheet" href="./style.css?v=20260818" type="text/css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       MASTHEAD — fixo, estilo NYT
+  ═══════════════════════════════════════ -->
+  <header class="masthead" id="masthead">
+    <div class="masthead-top-bar">
+      <span class="tb-left" id="currentDate"></span>
+      <span class="tb-center">Edição Especial de Amor · Nº 001</span>
+      <span class="tb-right">São Paulo, Brasil</span>
+    </div>
+
+    <div class="mast-rule double"></div>
+
+    <div class="masthead-title-row">
+      <h1 class="newspaper-name">The Wedding Times</h1>
+    </div>
+    <p class="masthead-tagline">Graziela Oliveira Lima &amp; Matheus Da Silva Flores · 12 de Dezembro de 2026</p>
+
+    <div class="mast-rule single"></div>
+
+    <nav class="masthead-nav" id="mastheadNav">
+      <a href="#nossa-historia">Nossa História</a>
+      <span class="np">|</span>
+      <a href="#o-grande-dia">O Grande Dia</a>
+      <span class="np">|</span>
+      <a href="#o-local">O Local</a>
+      <span class="np">|</span>
+      <a href="#galeria">Galeria</a>
+      <span class="np">|</span>
+      <a href="#confirmar-presenca">Confirmar Presença</a>
+      <span class="np">|</span>
+      <a href="#mensagens">Mensagens</a>
+      <span class="np">|</span>
+      <a href="#lista-presentes">Lista de Presentes</a>
+    </nav>
+
+    <div class="mast-rule single"></div>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       HERO — CAPA
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-grid">
+
+      <!-- Coluna esquerda -->
+      <div class="hero-side hero-left">
+        <div class="side-block">
+          <p class="kicker">Nota Social</p>
+          <h3 class="side-hed">Uma história que começou com um e-mail e uma rosa na Paulista</h3>
+          <p class="side-body">O que parecia um infortúnio — um celular roubado — revelou-se o início da mais improvável e bela correspondência amorosa.</p>
+        </div>
+        <hr class="hair-rule" />
+        <div class="side-block">
+          <p class="kicker">Contagem Regressiva</p>
+          <div class="countdown-mini">
+            <div class="cm-unit"><span id="cm-days">--</span><small>dias</small></div>
+            <div class="cm-unit"><span id="cm-hours">--</span><small>hrs</small></div>
+            <div class="cm-unit"><span id="cm-mins">--</span><small>min</small></div>
+          </div>
+        </div>
+        <hr class="hair-rule" />
+        <div class="side-block">
+          <p class="kicker">Traje</p>
+          <p class="side-body">Esporte fino. Branco e Bege são reservados aos noivos.</p>
+        </div>
+      </div>
+
+      <!-- Coluna central -->
+      <div class="hero-center">
+        <p class="edition-tag">EDIÇÃO ESPECIAL · DEZEMBRO 2026</p>
+        <h2 class="hero-headline">
+          Graziela &amp; Matheus<br/>
+          Anunciam o Casamento<br/>
+          Mais Esperada do Ano
+        </h2>
+        <div class="hero-orn"><span>✦</span></div>
+        <p class="hero-deck">
+          Em cerimônia íntima no Palacete Rosa, o casal que se conheceu através de e-mails e uma rosa vermelha na Avenida Paulista, celebra o amor que resistiu a cada obstáculo.
+        </p>
+        <figure class="hero-fig">
+          <img
+            src="https://res.cloudinary.com/djrk4inxt/image/upload/v1774444117/Pr%C3%A9_Wedding_Graziela_e_Matheus_-_Qualidade_m%C3%A1xima-196_ola9fr.jpg"
+            alt="Matheus e Graziela"
+            class="hero-img"
+          />
+          <figcaption>Graziela &amp; Matheus · Foto Oficial · 2022</figcaption>
+        </figure>
+        <p class="hero-body">
+          O casal receberá familiares e amigos no <strong>Palacete Rosa</strong>, em São Paulo, no dia <strong>12 de dezembro de 2026</strong>, às 10h. A celebração vai das 10h às 16h, reunindo aqueles que testemunharam cada capítulo desta história extraordinária.
+        </p>
+      </div>
+
+      <!-- Coluna direita -->
+      <div class="hero-side hero-right">
+        <div class="side-block">
+          <p class="kicker">O Grande Dia</p>
+          <div class="date-pill">
+            <span class="dp-day">12</span>
+            <span class="dp-month">DEZ</span>
+            <span class="dp-year">2026</span>
+          </div>
+          <hr class="hair-rule" style="margin:10px 0"/>
+          <p class="ev-line">🕙 10h00 — Cerimônia</p>
+          <p class="ev-line">🥂 Festa até às 16h</p>
+          <p class="ev-line">📍 Palacete Rosa, SP</p>
+        </div>
+        <hr class="hair-rule" />
+        <div class="side-block">
+          <p class="kicker">Confirmar Presença</p>
+          <p class="side-body">Confirme até <strong>30 de Outubro de 2026</strong>.</p>
+          <a href="#confirmar-presenca" class="text-link">Confirmar agora →</a>
+        </div>
+        <hr class="hair-rule" />
+        <div class="side-block">
+          <p class="kicker">Presentes</p>
+          <p class="side-body">Sua presença é o maior presente. Se quiser contribuir, veja nossa lista.</p>
+          <a href="#lista-presentes" class="text-link">Ver lista →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-div">— ✦ —</div>
+
+  <!-- ═══════════════════════════════════════
+       NOSSA HISTÓRIA
+  ═══════════════════════════════════════ -->
+  <section class="pg-section" id="nossa-historia">
+    <div class="container">
+
+      <header class="sec-header">
+        <div class="sec-rule"></div>
+        <h2 class="sec-title">Nossa História</h2>
+        <p class="sec-sub">A crônica de dois corações que se encontraram da forma mais improvável</p>
+        <div class="sec-rule"></div>
+      </header>
+
+      <div class="story-layout">
+
+        <div class="story-main">
+
+          <article class="article">
+            <h3 class="art-title">Um Celular Roubado, Mudou Tudo</h3>
+            <p class="art-meta">Por <em>A Redação</em> · São Paulo, 2019</p>
+            <hr class="art-rule" />
+            <div class="art-body dropcap">
+              <p>Era um dia comum em São Paulo quando o destino decidiu intervir da forma mais inusitada possível. Matheus teve seu celular roubado — um contratempo que, para a maioria das pessoas, seria apenas mais um pesadelo urbano. Para ele, porém, foi o início de tudo.</p>
+              <p>Sem telefone, a comunicação se deu pela via mais clássica do mundo digital: o e-mail. E foi através dessa troca de mensagens escritas com cuidado, sem a pressa dos aplicativos de mensagem, que Matheus e Graziela construíram algo que nenhum smartphone teria conseguido criar tão bem.</p>
+              <p>Havia algo de diferente, quase literário, na forma como eles se conheceram. Cada mensagem era pensada, cada palavra escolhida. Sem emojis que substituíssem sentimentos, sem áudios de dez segundos. Apenas palavras — e entre elas, um afeto crescendo em silêncio.</p>
+            </div>
+          </article>
+
+          <blockquote class="pull-quote">
+            <p>"Era meio difícil colocar tudo em um único e-mail, mas mesmo assim deu pra conhecer bastante da Grazi. Engraçado como, escrevendo só um e-mail por dia, a pessoa acaba colocando tudo que pensa e sente ali… dá pra enxergar bem o jeito dela de ver as coisas."</p>
+            <cite>— Matheus</cite>
+          </blockquote>
+
+          <article class="article">
+            <h3 class="art-title">Uma Rosa na Avenida Paulista</h3>
+            <p class="art-meta">Por <em>Matheus</em> · Avenida Paulista, São Paulo</p>
+            <hr class="art-rule" />
+            <div class="art-body dropcap">
+              <p>Depois de semanas que estavamos trocando e-mails, chegou o momento do encontro. Escolhi a Avenida Paulista "o coração de São Paulo" e levei uma rosa. Um gesto simples, quase antiquado, mas que acho que ate combinava com os e-mails, Graziela nem acreditou quando recebeu a rosa, ficou repetindo "que lindo, é pra mim? tem certeza que é pra mim?".</p>
+              <p>Ela chegou sem saber exatamente o que esperar. Eu estava lá, com a rosa, com o mesmo cuidado que colocava em cada e-mail. Naquele instante, em meio ao movimento da estacao da Paulista, abaixo de uma das avenidas mais movimentadas do Brasil, o mundo pareceu pausar por um segundo só pra mim.</p>
+            </div>
+          </article>
+
+          <blockquote class="pull-quote">
+            <p>"Ele estava lá com uma rosa. Naquele momento eu soube que esse homem era o último romântico."</p>
+            <cite>— Graziela</cite>
+          </blockquote>
+
+          <article class="article">
+            <h3 class="art-title">Um Jantar que Virou História</h3>
+            <p class="art-meta">Por <em>Graziela</em> · Avenida Paulista, São Paulo</p>
+            <hr class="art-rule" />
+            <div class="art-body dropcap">
+              <p>No nosso primeiro ano juntos, chegou o meu primeiro aniversário ao lado do Matheus e, claro, ele preparou uma surpresa.</p>
+              <p>Naquela noite, ele disse que me levaria para jantar em um restaurante. Saímos no fim da tarde e, para completar a aventura, estava chovendo bastante. Depois de enfrentar a chuva, finalmente chegamos ao destino… mas havia um pequeno detalhe: o restaurante não existia mais. No lugar dele, havia um bar!</p>
+              <p>Eu já estava um pouco estressada com a chuva e, para completar, estava morrendo de fome! Como definitivamente não era o jantar que imaginávamos, acabamos voltando para a estação para decidir o que fazer.</p>
+              <p>No fim das contas, nosso jantar especial virou McDonald’s e uma sessão de cinema improvisada para assistir <em>Minha Mãe é uma Peça 2</em>.</p>
+              <p>Hoje, olhando para trás, é impossível não rir. O restaurante não deu certo…, mas virou uma boa história para contar. E o que realmente importava era estarmos juntos. ❤️</p>
+            </div>
+          </article>
+
+          <article class="article">
+            <h3 class="art-title">O Pedido</h3>
+            <hr class="art-rule" />
+            <div class="art-body dropcap">
+              <p>Alguns anos depois daquele primeiro encontro, Matheus planejou um pedido à altura da história que construíram juntos. Com a mesma atenção que dedicava a cada e-mail.</p>
+			  <p>Num casamento de amigos do Matheus, - Lucas & Tainá - , ele comprou a aliança poucos dias antes e pediu que ela levasse uma sacola de presente, dizendo que era um presente de um colega para os noivos.</p>
+			  <p>Assim que Tainá se preparou para jogar o buquê, ela se virou e caminhou direto até Graziela, que, confusa, ainda tentava entender o que estava acontecendo. Foi então que Matheus se ajoelhou para fazer o pedido. Graziela disse sim — antes mesmo de ele terminar.</p>
+              <p>Agora, no dia 12 de dezembro de 2026, no Palacete Rosa, eles transformam uma história improvável em uma promessa para a vida toda.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <aside class="story-aside">
+          <div class="aside-box">
+            <p class="kicker">Linha do Tempo</p>
+            <hr class="hair-rule" />
+            <div class="timeline">
+              <div class="tl-row"><span class="tl-yr">2019</span><span class="tl-txt">Celular roubado. Primeiro e-mail enviado.</span></div>
+              <div class="tl-row"><span class="tl-yr">2019</span><span class="tl-txt">Primeiro encontro na Paulista com uma rosa.</span></div>
+              <div class="tl-row"><span class="tl-yr">2020</span><span class="tl-txt">Primeira viagem juntos.</span></div>
+              <div class="tl-row"><span class="tl-yr">2021</span><span class="tl-txt">Passaram a morar juntos.</span></div>
+              <div class="tl-row"><span class="tl-yr">2022</span><span class="tl-txt">O pedido.</span></div>
+              <div class="tl-row tl-hl"><span class="tl-yr">2026</span><span class="tl-txt">O grande sim. ✦</span></div>
+            </div>
+          </div>
+
+          <div class="aside-box">
+            <p class="kicker">Notas da Redação</p>
+            <hr class="hair-rule" />
+            <ul class="fun-list">
+              <li>Os dois ainda guardam os primeiros e-mails trocados</li>
+              <li>O local do encontro na paulista, foi no Mirante do Sesc</li>
+              <li>Graziela diz que ele só joga e não faz mais nada — ele discorda "tambem como e durmo..."</li>
+              <li>Ambos amam viajar para a Bahia com a mesma intensidade</li>
+			  <li>A serie favorita do casal é Game of Thrones</li>
+			  <li>Matheus diz que se ela pudesse dormia o dia todo -ela concorda "muito bom dormir!"</li>
+			  <li>"Ate o chef Érick Jacquin, se renderia a culinaria da Grazi" - diz Matheus</li>
+            </ul>
+          </div>
+
+          <div class="aside-box aside-highlight">
+            <p class="kicker">12 · 12 · 2026</p>
+            <hr class="hair-rule" />
+            <p class="aside-quote">"Prefiro compartilhar uma vida com você a encarar todas as eras deste mundo sozinho"</p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       NOSSA RÁDIO
+  ═══════════════════════════════════════ -->
+  <section class="pg-section cream-bg radio-section" id="nossa-radio">
+    <div class="container">
+      <header class="sec-header">
+        <div class="sec-rule"></div>
+        <h2 class="sec-title">Nossa Rádio</h2>
+        <p class="sec-sub">Uma trilha sonora para acompanhar a nossa história</p>
+        <div class="sec-rule"></div>
+      </header>
+
+      <div class="radio-card">
+        <div class="radio-intro">
+          <p class="kicker">Aperte o play</p>
+          <h3 class="radio-title">As músicas de Matheus &amp; Graziela</h3>
+          <p>Ouça nossa seleção aqui mesmo. Se preferir, abra a rádio no Samply ou instale o aplicativo para levar as músicas com você.</p>
+          <div class="radio-actions">
+            <a class="radio-btn radio-btn-primary" href="https://samply.app/p/ooCNBfRVt8uGBxbD6LSa?si=9LX0VmTZ8sPWkOdeDeOGvVvxbQV2" target="_blank" rel="noopener noreferrer">Abrir no Samply <span aria-hidden="true">↗</span></a>
+            <a class="radio-btn" href="https://samply.app/install" target="_blank" rel="noopener noreferrer">Baixar o app <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="radio-player-wrap">
+          <iframe
+            class="radio-player"
+            src="https://samply.app/embed/ooCNBfRVt8uGBxbD6LSa?color=17365d"
+            title="Rádio de Matheus e Graziela no Samply"
+            loading="lazy"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen"
+            frameborder="0">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-div">✦ ✦ ✦</div>
+
+  <!-- ═══════════════════════════════════════
+       O GRANDE DIA
+  ═══════════════════════════════════════ -->
+  <section class="pg-section dark-bg" id="o-grande-dia">
+    <div class="container">
+
+      <header class="sec-header">
+        <div class="sec-rule light"></div>
+        <h2 class="sec-title light">O Grande Dia</h2>
+        <p class="sec-sub light">Todas as informações para esta data histórica</p>
+        <div class="sec-rule light"></div>
+      </header>
+
+      <div class="event-cols">
+        <div class="ev-col">
+          <span class="ev-icon">⚭</span>
+          <h3 class="ev-col-title">Cerimônia</h3>
+          <hr class="ev-hr" />
+          <p class="ev-time">10h00</p>
+          <p class="ev-place">Palacete Rosa</p>
+          <p class="ev-addr">São Paulo · SP</p>
+        </div>
+        <div class="ev-col ev-col-feat">
+          <div class="big-date">
+            <span class="bd-d">12</span>
+            <span class="bd-m">DEZEMBRO</span>
+            <span class="bd-y">2026</span>
+          </div>
+          <p class="bd-tag">— Um dia. Uma promessa. Uma vida. —</p>
+        </div>
+        <div class="ev-col">
+          <span class="ev-icon">🥂</span>
+          <h3 class="ev-col-title">Celebração</h3>
+          <hr class="ev-hr" />
+          <p class="ev-time">Até 16h00</p>
+          <p class="ev-place">Palacete Rosa</p>
+          <p class="ev-addr">São Paulo · SP</p>
+        </div>
+      </div>
+
+      <div class="countdown-block">
+        <p class="cd-eyebrow">Faltam apenas…</p>
+        <div class="countdown-main">
+          <div class="cd-unit"><span id="cd-days">--</span><label>Dias</label></div>
+          <span class="cd-colon">:</span>
+          <div class="cd-unit"><span id="cd-hours">--</span><label>Horas</label></div>
+          <span class="cd-colon">:</span>
+          <div class="cd-unit"><span id="cd-minutes">--</span><label>Min</label></div>
+          <span class="cd-colon">:</span>
+          <div class="cd-unit"><span id="cd-seconds">--</span><label>Seg</label></div>
+        </div>
+      </div>
+
+      <div class="logistics">
+        <div class="log-card">
+          <h4 class="log-title">🏨 Hospedagem Sugerida</h4>
+          <hr class="hair-rule light-hr" />
+          <p class="log-body">Para convidados de fora de São Paulo, recomendamos hotéis próximos à região central, bem servidos de transporte:</p>
+          <ul class="log-list">
+            <li><strong>Hotel Unique</strong> · Jardim Paulista · ~2km do local</li>
+            <li><strong>Gold Star Hotel</strong> · Ipiranga · ~1km</li>
+            <li><strong>OYO Hotel Dom Pedro</strong> · Vila Monumento · ~1,6km</li>
+			<li><strong>Prime Smart</strong> · Santa Cruz · ~2,8km</li>
+			<li><strong>Hotel do Museu no Ipiranga</strong> · Vila Monumento · ~500m</li>
+          </ul>
+          <p class="log-note">Reserve com antecedência — dezembro é alta temporada em SP.</p>
+        </div>
+        <div class="log-card">
+          <h4 class="log-title">🚗 Como Chegar</h4>
+          <hr class="hair-rule light-hr" />
+          <p class="log-body">O Palacete Rosa é bem localizado e acessível por diferentes meios:</p>
+          <ul class="log-list">
+            <li><strong>Estação Santos Imigrantes</strong> · Estação mais próxima a ~30 min a pé</li>
+            <li><strong>Uber / 99</strong> · Recomendado para quem prefere conforto</li>
+            <li><strong>Estacionamento</strong> · Vagas limitadas no local, valor a confirmar mas na rua de tras, há lugar para deixar o Veiculo</li>
+          </ul>
+          <p class="log-note">Planeje-se — o trânsito em SP pode ser imprevisível.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-div">— ✦ —</div>
+
+  <!-- ═══════════════════════════════════════
+       O LOCAL
+  ═══════════════════════════════════════ -->
+  <section class="pg-section" id="o-local">
+    <div class="container">
+
+      <header class="sec-header">
+        <div class="sec-rule"></div>
+        <h2 class="sec-title">O Local</h2>
+        <p class="sec-sub">Um cenário à altura da ocasião</p>
+        <div class="sec-rule"></div>
+      </header>
+
+      <div class="venue-layout">
+        <div class="venue-text">
+          <h3 class="art-title">Palacete Rosa — Elegância no Coração de São Paulo</h3>
+          <p class="art-meta">São Paulo · SP · Brasil</p>
+          <hr class="art-rule" />
+          <div class="art-body dropcap">
+            <p>Com sua arquitetura histórica e atmosfera única, o Palacete Rosa é um dos espaços mais charmosos de São Paulo para celebrações especiais. O local une a elegância de outro tempo com toda a infraestrutura moderna para receber os convidados com conforto e sofisticação.</p>
+            <p>Jardins bem cuidados, salões com pé-direito alto e uma iluminação que transforma qualquer momento em memória — o Palacete Rosa foi escolhido por Matheus e Graziela exatamente porque um lugar especial merece um cenário à altura.</p>
+          </div>
+          <div class="venue-details">
+            <div class="vd-row"><strong>Endereço</strong><span>Palacete Rosa · São Paulo, SP</span></div>
+            <div class="vd-row"><strong>Data</strong><span>12 de Dezembro de 2026</span></div>
+            <div class="vd-row"><strong>Horário</strong><span>10h00 às 16h00</span></div>
+            <div class="vd-row"><strong>Estacionamento</strong><span>Vagas limitadas, valor a confirmar</span></div>
+          </div>
+        </div>
+        <div class="venue-map">
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5849832680683!2d-46.610119823913536!3d-23.5833444624016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5bde209d637d%3A0xde8287103c374ade!2sPalacete%20Rosa!5e0!3m2!1spt-BR!2sbr!4v1774383155170!5m2!1spt-BR!2sbr"
+              width="100%" height="380" style="border:0;"
+              allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Palacete Rosa — São Paulo">
+            </iframe>
+            <p class="map-cap">Palacete Rosa · São Paulo · SP</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-div">✦ ✦ ✦</div>
+
+  <!-- ═══ GALERIA ═══ -->
+<section class="pg-section cream-bg" id="galeria">
+  <div class="container">
+
+    <header class="sec-header">
+      <div class="sec-rule"></div>
+      <h2 class="sec-title">Galeria</h2>
+      <p class="sec-sub">Registros de uma história em imagens</p>
+      <div class="sec-rule"></div>
+    </header>
+
+    <p class="gallery-hint">Toque em qualquer foto para abrir em tela cheia</p>
+<!--
+	<div class="gallery" id="gallery">
+	<div class="g-item" data-idx="6">
+		<img src="https://res.cloudinary.com/djrk4inxt/image/upload/v1774446832/Pr%C3%A9_Wedding_Graziela_e_Matheus_-_Qualidade_m%C3%A1xima-120_okubel.jpg" alt="Descrição" loading="lazy"/>
+		<div class="g-overlay"><p class="g-cap-lb">Legenda da foto - 2022</p></div>
+	</div>
+-->
+
+    <div class="gallery" id="gallery">
+      <div class="g-item g-tall" data-idx="0">
+        <img src="https://res.cloudinary.com/djrk4inxt/image/upload/v1774446832/Pr%C3%A9_Wedding_Graziela_e_Matheus_-_Qualidade_m%C3%A1xima-120_okubel.jpg" alt="Casal em Holambra" loading="lazy"/>
+        <div class="g-overlay"><p class="g-cap-lb">O casal em Holambra</p></div>
+      </div>
+      <div class="g-item" data-idx="1">
+        <img src="https://res.cloudinary.com/djrk4inxt/image/upload/v1774462104/IMG_20220129_185520_vcujpn.jpg" alt="O pedido" loading="lazy"/>
+        <div class="g-overlay"><p class="g-cap-lb">O pedido · 2022</p></div>
+      </div>
+      <div class="g-item" data-idx="2">
+        <img src="https://res.cloudinary.com/djrk4inxt/image/upload/q_auto/f_auto/v1774446831/Pr%C3%A9_Wedding_Graziela_e_Matheus_-_Qualidade_m%C3%A1xima-114_qzfc82.jpg" alt="Campo Das Flores" loading="lazy"/>
+        <div class="g-overlay"><p class="g-cap-lb">Campo Das Flores</p></div>
+      </div>
+	  <div class="g-item" data-idx="3">
+        <img src="https://res.cloudinary.com/djrk4inxt/image/upload/v1774465844/20191013_132015_daaddc.jpg" alt="Primeiro encontro" loading="lazy"/>
+        <div class="g-overlay"><p class="g-cap-lb">Vista do primeiro encontro</p></div>
+      </div>
+      <div class="g-item g-wide" data-idx="4">
+        <img src="https://res.cloudinary.com/djrk4inxt/image/upload/q_auto/f_auto/v1774446833/Pr%C3%A9_Wedding_Graziela_e_Matheus_-_Qualidade_m%C3%A1xima-218_crueup.jpg" alt="Pré Wedding" loading="lazy"/>
+        <div class="g-overlay"><p class="g-cap-lb">Pré Wedding</p></div>
+      </div>
+      <div class="g-item" data-idx="5">
+        <img src="https://res.cloudinary.com/djrk4inxt/image/upload/q_auto/f_auto/v1774446832/Pr%C3%A9_Wedding_Graziela_e_Matheus_-_Qualidade_m%C3%A1xima-146_hssymf.jpg" alt="Pré Wedding" loading="lazy"/>
+        <div class="g-overlay"><p class="g-cap-lb">Pré Wedding</p></div>
+      </div>
+
+    </div>
+
+    <p class="gallery-note">✦ Em breve: fotos do ensaio oficial do casal ✦</p>
+  </div>
+</section>
+
+  <!-- ═══════════════════════════════════════
+       CONFIRMAR PRESENÇA
+  ═══════════════════════════════════════ -->
+  <section class="pg-section" id="confirmar-presenca">
+    <div class="container">
+
+      <header class="sec-header">
+        <div class="sec-rule"></div>
+        <h2 class="sec-title">Confirmar Presença</h2>
+        <p class="sec-sub">Faça parte desta edição histórica</p>
+        <div class="sec-rule"></div>
+      </header>
+
+      <div class="rsvp-wrap">
+        <p class="rsvp-lede">
+          Sua presença é o mais precioso presente que poderíamos receber.<br/>
+          Por favor, confirme até <strong>30 de Novembro de 2026</strong>.
+        </p>
+
+        <form class="rsvp-form" id="rsvpForm" novalidate>
+          <div class="f-row two">
+            <div class="f-group">
+              <label for="f-name">Nome completo <span class="req">*</span></label>
+              <input type="text" id="f-name" name="name" placeholder="Seu nome completo" required />
+            </div>
+            <div class="f-group">
+              <label for="f-email">E-mail <span class="req">*</span></label>
+              <input type="email" id="f-email" name="email" placeholder="seu@email.com" required />
+            </div>
+          </div>
+          <div class="f-row two">
+            <div class="f-group">
+              <label>Confirmação <span class="req">*</span></label>
+              <div class="radio-stack">
+                <label class="r-opt"><input type="radio" name="attending" value="sim" required /><span>Com grande prazer, estarei presente</span></label>
+                <label class="r-opt"><input type="radio" name="attending" value="nao" /><span>Infelizmente não poderei comparecer</span></label>
+              </div>
+            </div>
+            <div class="f-group">
+              <label for="f-guests">Acompanhantes</label>
+              <select id="f-guests" name="guests">
+                <option value="0">Apenas eu</option>
+                <option value="1">+ 1 acompanhante</option>
+                <option value="2">+ 2 acompanhantes</option>
+              </select>
+            </div>
+          </div>
+          <div class="f-row">
+            <div class="f-group">
+              <label for="f-dietary">Restrições alimentares</label>
+              <input type="text" id="f-dietary" name="dietary" placeholder="Ex: vegetariano, sem glúten, alergia a frutos do mar…" />
+            </div>
+          </div>
+          <div class="f-row">
+            <div class="f-group">
+              <label for="f-message">Mensagem para os noivos</label>
+              <textarea id="f-message" name="message" rows="4" placeholder="Deixe suas palavras de carinho…"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">
+            Enviar Confirmação <span class="b-orn">✦</span>
+          </button>
+          <div class="form-ok" id="formOk">
+            <p>✦ Confirmação recebida com muito carinho. Até lá! ✦</p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-div">✦ ✦ ✦</div>
+
+  <!-- ═══════════════════════════════════════
+       MENSAGENS
+  ═══════════════════════════════════════ -->
+  <section class="pg-section cream-bg" id="mensagens">
+    <div class="container">
+
+      <header class="sec-header">
+        <div class="sec-rule"></div>
+        <h2 class="sec-title">Mensagens</h2>
+        <p class="sec-sub">Coluna social — palavras dos noivos e dos convidados</p>
+        <div class="sec-rule"></div>
+      </header>
+
+      <div class="messages-layout">
+        <div class="couple-msgs">
+          <div class="msg-card">
+            <p class="msg-from">Do noivo</p>
+            <hr class="hair-rule" />
+            <p class="msg-txt">"Graziela, desde o primeiro e-mail eu já senti que você tinha algo diferente. Cada coisa que você escrevia falava mais do que qualquer ligação. Quando te vi na Paulista, com a rosa na mão e aquele nervosismo, eu tive certeza… não dava mais pra imaginar minha vida sem te contar como foi meu dia. E agora nem preciso mais de e-mail pra isso, porque vou estar do seu lado."</p>
+            <p class="msg-sig">— Matheus</p>
+          </div>
+          <div class="msg-card msg-alt">
+            <p class="msg-from">Da noiva</p>
+            <hr class="hair-rule" />
+            <p class="msg-txt">"Matheus, você entrou na minha vida como quem não queria nada e acabou se tornando tudo. Ao longo dos anos, o nosso amor amadureceu, se fortaleceu e ficou ainda melhor. A gente cresceu, mudou e, sem perceber, se tornou abrigo, lar um do outro. E, como diria o Charlie Brown Jr., a gente passa a entender melhor a vida quando encontra o verdadeiro amor. E hoje eu entendo. Que sorte a minha ter encontrado você."</p>
+            <p class="msg-sig">— Graziela</p>
+          </div>
+        </div>
+
+        <div class="guest-msgs">
+          <p class="kicker">Mensagens dos convidados</p>
+          <hr class="hair-rule" />
+          <div id="msgFeed">
+            <div class="gm-item">
+              <p class="gm-txt">"Ver vocês dois juntos me faz acreditar ainda mais no amor. Que este dia seja o início de uma vida cheia de sonhos realizados."</p>
+              <span class="gm-by">— Nathalia &amp; Gabriel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-div">— ✦ —</div>
+
+  <!-- ═══════════════════════════════════════
+       LISTA DE PRESENTES
+  ═══════════════════════════════════════ -->
+  <section class="pg-section" id="lista-presentes">
+    <div class="container">
+
+      <header class="sec-header">
+        <div class="sec-rule"></div>
+        <h2 class="sec-title">Lista de Presentes</h2>
+        <p class="sec-sub">Sua presença já é o nosso maior presente — mas se quiser nos mimar…</p>
+        <div class="sec-rule"></div>
+      </header>
+
+      <div class="gifts-layout">
+
+        <div class="pix-panel">
+          <h3 class="pix-title">Contribuição via PIX</h3>
+          <hr class="hair-rule" />
+          <p class="pix-desc">Se preferir contribuir livremente para a nossa lua de mel ou para o nosso novo lar, aceitamos com muito carinho.</p>
+          <div class="pix-box">
+            <p class="pix-label">Chave PIX</p>
+            <p class="pix-key" id="pixKey">casamento@matheus-graziela.com.br</p>
+            <button class="btn-copy" onclick="copyPix()">Copiar chave ✦</button>
+            <p class="pix-done" id="pixCopied">✓ Copiado!</p>
+          </div>
+          <p class="pix-note">* Substitua pela sua chave PIX real antes de publicar o site.</p>
+        </div>
+
+        <div class="gift-list gift-list-simple">
+          <h3 class="gl-title">Nossa Lista de Presentes</h3>
+          <hr class="hair-rule" />
+          <p class="gift-list-desc">Preparamos uma lista especial para quem quiser nos presentear. Assim que ela estiver pronta, o acesso aparecerá aqui.</p>
+          <!-- Substitua o # abaixo pela URL da lista de presentes quando ela estiver pronta. -->
+          <a href="#" class="gift-list-button is-pending" aria-disabled="true">Lista de presentes em breve <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="gift-list legacy-gift-list" aria-hidden="true">
+          <h3 class="gl-title">Lista de Desejos</h3>
+          <hr class="hair-rule" />
+
+          <div class="gift-cat">
+            <h4 class="gc-lbl">🏠 Para o Novo Lar</h4>
+            <div class="gift-items">
+              <div class="gi"><div class="gi-info"><span class="gi-name">Jogo de panelas inox premium</span><span class="gi-price">R$ 470</span></div><a href="https://www.amazon.com.br/gp/aw/d/B0D9BY5TZD/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=0080d3a3c871555f05915ba00756aca0&hsa_cr_id=0&qid=1774467195&sr=1-3-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_s_sparkle_sbtcd_asin_2_img&pd_rd_w=VymJ4&content-id=amzn1.sym.28153920-e8af-4e55-ae3c-1905a4e32903%3Aamzn1.sym.28153920-e8af-4e55-ae3c-1905a4e32903&pf_rd_p=28153920-e8af-4e55-ae3c-1905a4e32903&pf_rd_r=RSXFJNH2EBPKE5KZKSK4&pd_rd_wg=SwRJ1&pd_rd_r=66e3b5bf-e45d-444b-8e0e-1cf740b71f9a" target="_blank" class="gi-btn">Ver →</a></div>
+              <div class="gi"><div class="gi-info"><span class="gi-name">Cafeteira italiana Alumínio Vanilla</span><span class="gi-price">R$ 110</span></div><a href="https://www.amazon.com.br/Cafeteira-Alum%C3%ADnio-X%C3%ADcaras-Verona-Brinox/dp/B0C8PT9XPR/ref=sr_1_11?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2I1VPE82L2Q5L&dib=eyJ2IjoiMSJ9.H_K_cGJ2d6kDrF9KkS9Ap4PuT3F7lVK42Ou40dsw96YvfPe75Zkca6joBJNretqdOk2ndQOWkWL768E1cQIGlH3Ad9hpzeCJPn2fBSR2iYBOME1qo0kWwY5Qi_gcc4j2cPCeo_X3ZnESSPhevu9hrSx4iBZQ9bcoD6Luun6tsNH0LtF5piK5_ztcLh-8ojeNNe3I2qPdQ8KQQqhstBt7X1XMCSXyfBI4G2eOYpb0VOM.JuZFUV87rdj2b1ZkRaeeEZwKoePIOXi_-Rh3LN69fGw&dib_tag=se&keywords=Cafeteira%2Bitaliana&qid=1774467303&s=kitchen&sprefix=cafeteira%2Bitaliana%2Bbialetti%2Ckitchen%2C490&sr=1-11&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d&th=1" target="_blank" class="gi-btn">Ver →</a></div>
+			  <div class="gi"><div class="gi-info"><span class="gi-name">Micro-ondas</span><span class="gi-price">R$ 500</span></div><a href="https://www.amazon.com.br/PHILCO-96051092-MICRO-ONDAS-PMO23EB-110v/dp/B08JD66K5C/ref=pd_rhf_dp_s_pd_crcbs_d_sccl_1_45/141-1194317-0921701?pd_rd_w=skSMP&content-id=amzn1.sym.aef4fdbb-350a-48f6-a7d5-3c838de81164&pf_rd_p=aef4fdbb-350a-48f6-a7d5-3c838de81164&pf_rd_r=M4YX0HMGNGDMWS0TY69T&pd_rd_wg=28ove&pd_rd_r=9a633ffb-c5bd-4d40-a9e8-4f9221fda23a&pd_rd_i=B08JD66K5C&th=1" target="_blank" class="gi-btn">Ver →</a></div>
+			  <div class="gi"><div class="gi-info"><span class="gi-name">Smart TV 55</span><span class="gi-price">R$ 3.300</span></div><a href="https://www.amazon.com.br/TCL-Polegadas-Bluetooth-Google-55C6K/dp/B0F7JZMVKF/ref=cm_cr_arp_d_product_top?ie=UTF8" target="_blank" class="gi-btn">Ver →</a></div>
+			<!--  <div class="gi"><div class="gi-info"><span class="gi-name">Micro-ondas</span><span class="gi-price">R$ 500</span></div><a href="https://www.amazon.com.br/PHILCO-96051092-MICRO-ONDAS-PMO23EB-110v/dp/B08JD66K5C/ref=pd_rhf_dp_s_pd_crcbs_d_sccl_1_45/141-1194317-0921701?pd_rd_w=skSMP&content-id=amzn1.sym.aef4fdbb-350a-48f6-a7d5-3c838de81164&pf_rd_p=aef4fdbb-350a-48f6-a7d5-3c838de81164&pf_rd_r=M4YX0HMGNGDMWS0TY69T&pd_rd_wg=28ove&pd_rd_r=9a633ffb-c5bd-4d40-a9e8-4f9221fda23a&pd_rd_i=B08JD66K5C&th=1" target="_blank" class="gi-btn">Ver →</a></div>
+			  <div class="gi"><div class="gi-info"><span class="gi-name">Panela de pressão 4,5l</span><span class="gi-price">R$ 130</span></div><a href="https://www.amazon.com.br/PRESS%C3%83O-FECHAMENTO-EXTERNO-QUALITY-VERMELHO/dp/B09GT4L5PY/ref=pd_sim_hxwPM1_sspa_dk_detail_d_sccl_3_3/141-1194317-0921701?pd_rd_w=8qRxM&content-id=amzn1.sym.3db004cb-278d-46b6-9838-e834c8193f79&pf_rd_p=3db004cb-278d-46b6-9838-e834c8193f79&pf_rd_r=WHWTA74CTA6FYQEA297M&pd_rd_wg=qa1Pn&pd_rd_r=b3c6d25e-c6f8-46e9-a602-0e56e0bee713&pd_rd_i=B09GT4L5PY&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1" target="_blank" class="gi-btn">Ver →</a></div>
+			  <div class="gi"><div class="gi-info"><span class="gi-name">Smart TV 55</span><span class="gi-price">R$ 2.900</span></div><a href="https://www.amazon.com.br/Samsung-Smart-Crystal-U8100F-2025/dp/B0F5X5GYK3/ref=sr_1_1_sspa?crid=1DCVSH7P8BAVY&dib=eyJ2IjoiMSJ9.zUChUUBargm9X6InWYpop1qBuBCKnlwWV_a2gkiePouBgGv01njVYjLUlCzm8tfjvaJHMCWS4AkQffmc4LwOd8XOGHJPtp3UeP9Xk9stuqDrAnIKXN6NXc2_pHQuPKN1ZnZUYPkamzqzpWvgOKKHrraKBaE9DzdhiO9sovOyAxoJ99GUt6y7_TBhWWlylNSfNHnjJdInZyvwolEc1Z4HNeeIV_mnJHzZgyjzukkv_NCXgtrvtk-haHy93JZXCMIri1TmcwLzNf8VZfiQPTcJYCFHu2I3pJFKeypBZFqa8kw.Rqro-2aX4QRMbqLxSSXLsNzuJjNjmQ4q6Ukj6DyptPA&dib_tag=se&keywords=televis%C3%A3o&qid=1774468209&sprefix=tele%2Caps%2C198&sr=8-1-spons&ufe=app_do%3Aamzn1.fos.9e6a115c-05b9-4b96-8e1c-b1f9ce2ac1a6&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" target="_blank" class="gi-btn">Ver →</a></div>
+			  <div class="gi"><div class="gi-info"><span class="gi-name">Adega climatizada</span><span class="gi-price">R$ 1.200</span></div><a href="https://www.amazon.com.br" target="_blank" class="gi-btn">Ver →</a></div>
+			  <div class="gi"><div class="gi-info"><span class="gi-name">Jogo de cama king casal</span><span class="gi-price">R$ 69</span></div><a href="https://www.amazon.com.br/Percal-Ponto-Palito-Pe%C3%A7as-Marinho/dp/B0BNNN5XXM/ref=sr_1_5?dib=eyJ2IjoiMSJ9.bl1PrvxxzGkYgzarqw6-N7hWn7eElb6tg4999_E2USy8Jx5lTnAUo0B3nbBDrtwqVUmt95AvHI6S_JfYYOyc06js8rkOzWNzfMtEdDJAS04yGnDZyPC222V39s8bfBEsC5UNmTb6pL22-WcnVF6NS4IgoutVYxV1ad2I0Nsd5XUxfGbqy1yEMLEIupZrnQBp237bDpPTZblAO7-EJyErMYuXhgzKXIrWj6nUDp8orhyhYF17kisY5YnyL9LzHXYJDdQIkAx_D-HaVcmeoWr6OZdKHJQITnoDnSrpD2IQMxM.OY_XsQPoNauwseRfYmuuhPwnOOegsmqwyqQNlxclUiM&dib_tag=se&keywords=Jogo%2Bde%2Bcama%2Bking%2Bcasal&qid=1774467618&sr=8-5&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&th=1" target="_blank" class="gi-btn">Ver →</a></div>
+			  <div class="gi"><div class="gi-info"><span class="gi-name">Adega climatizada</span><span class="gi-price">R$ 1.200</span></div><a href="https://www.amazon.com.br" target="_blank" class="gi-btn">Ver →</a></div>
+			  <div class="gi"><div class="gi-info"><span class="gi-name">Adega climatizada</span><span class="gi-price">R$ 1.200</span></div><a href="https://www.amazon.com.br" target="_blank" class="gi-btn">Ver →</a></div>
+			  <!--<div class="gi"><div class="gi-info"><span class="gi-name">Adega climatizada</span><span class="gi-price">R$ 1.200</span></div><a href="https://www.amazon.com.br" target="_blank" class="gi-btn">Ver →</a></div> -->
+            </div>
+          </div>
+
+          <div class="gift-cat">
+            <h4 class="gc-lbl">✈️ Lua de Mel</h4>
+            <div class="gift-items">
+              <div class="gi"><div class="gi-info"><span class="gi-name">Contribuição para viagem para lua de mel</span><span class="gi-price">Livre</span></div><button class="gi-btn" onclick="scrollToPix()">PIX →</button></div>
+              <div class="gi"><div class="gi-info"><span class="gi-name">Contribuição para hospedagem</span><span class="gi-price">Livre</span></div><button class="gi-btn" onclick="scrollToPix()">PIX →</button></div>
+			  <div class="gi"><div class="gi-info"><span class="gi-name">Jantar romântico no destino</span><span class="gi-price">Livre</span></div><button class="gi-btn" onclick="scrollToPix()">PIX →</button></div>
+            </div>
+          </div>
+
+        <!--  <div class="gift-cat">
+            <h4 class="gc-lbl">🍽️ Para a Cozinha</h4>
+            <div class="gift-items">
+              <div class="gi"><div class="gi-info"><span class="gi-name">KitchenAid Stand Mixer</span><span class="gi-price">R$ 2.300</span></div><a href="https://www.amazon.com.br" target="_blank" class="gi-btn">Ver →</a></div>
+              <div class="gi"><div class="gi-info"><span class="gi-name">Jogo de facas profissionais</span><span class="gi-price">R$ 380</span></div><a href="https://www.mercadolivre.com.br" target="_blank" class="gi-btn">Ver →</a></div>
+            </div>
+          </div>
+		-->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       RODAPÉ
+  ═══════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="ft-border-top"></div>
+    <div class="ft-inner">
+      <p class="ft-name">The Wedding Times</p>
+      <p class="ft-couple">Matheus da Silva Flores &amp; Graziela Oliveira Lima</p>
+      <hr class="ft-rule" />
+      <p class="ft-date">12 de Dezembro de 2026 · Palacete Rosa · São Paulo</p>
+      <p class="ft-orn">❧ ✦ ❧</p>
+      <p class="ft-note">Feito com amor, para o dia mais especial das nossas vidas.</p>
+    </div>
+    <div class="ft-border-bot"></div>
+  </footer>
+
+  <script src="./script.js?v=20260818"></script>
+</body>
+</html>
